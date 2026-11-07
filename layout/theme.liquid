@@ -6,6 +6,9 @@
 <title>{{ page_title }}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}</title>
 {% if page_description %}<meta name="description" content="{{ page_description | escape }}">{% endif %}
 {{ content_for_header }}
+<style>
+:root{--paper:{{ settings.color_background }};--ink:{{ settings.color_text }};--green:{{ settings.color_accent }}}
+</style>
 {{ 'base.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 </head>
