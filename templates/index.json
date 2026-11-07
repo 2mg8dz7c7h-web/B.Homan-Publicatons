@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "hero": {
+      "type": "main-hero",
+      "settings": {}
+    },
+    "intro": {
+      "type": "editorial-intro",
+      "settings": {}
+    },
+    "titles": {
+      "type": "publication-grid",
+      "blocks": {
+        "one": {
+          "type": "publication",
+          "settings": {
+            "title": "The Regional Review",
+            "category": "Regional affairs",
+            "cover_kicker": "Regional perspective",
+            "description": "People, places, ideas and the issues shaping regional Australia.",
+            "link_label": "Explore publication"
+          }
+        },
+        "two": {
+          "type": "publication",
+          "settings": {
+            "title": "The Business Review",
+            "category": "Enterprise",
+            "cover_kicker": "Business & enterprise",
+            "description": "Business, investment, agriculture and the regional economy.",
+            "link_label": "Explore publication"
+          }
+        },
+        "three": {
+          "type": "publication",
+          "settings": {
+            "title": "The Country Journal",
+            "category": "Culture & lifestyle",
+            "cover_kicker": "Country life",
+            "description": "Hospitality, culture, travel and the character of country living.",
+            "link_label": "Explore publication"
+          }
+        },
+        "four": {
+          "type": "publication",
+          "settings": {
+            "title": "The Property Review",
+            "category": "Property",
+            "cover_kicker": "Property & place",
+            "description": "Rural, residential and commercial property, considered.",
+            "link_label": "Explore publication"
+          }
+        },
+        "five": {
+          "type": "publication",
+          "settings": {
+            "title": "The Regional Exchange",
+            "category": "Directory",
+            "cover_kicker": "The regional network",
+            "description": "A future home for businesses, services and useful connections.",
+            "link_label": "Explore publication"
+          }
+        },
+        "six": {
+          "type": "publication",
+          "settings": {
+            "title": "The Review Society",
+            "category": "Events",
+            "cover_kicker": "Ideas in company",
+            "description": "A future programme of gatherings, conversations and experiences.",
+            "link_label": "Explore publication"
+          }
+        }
+      },
+      "block_order": [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six"
+      ],
+      "settings": {}
+    },
+    "point": {
+      "type": "point-of-view",
+      "settings": {}
+    },
+    "principles": {
+      "type": "principles",
+      "blocks": {
+        "a": {
+          "type": "principle",
+          "settings": {
+            "title": "Editorial integrity",
+            "text": "Careful research, fair representation and a commitment to accuracy."
+          }
+        },
+        "b": {
+          "type": "principle",
+          "settings": {
+            "title": "Regional perspective",
+            "text": "An enduring interest in the communities, businesses and landscapes beyond the capitals."
+          }
+        },
+        "c": {
+          "type": "principle",
+          "settings": {
+            "title": "Enduring quality",
+            "text": "Considered design and useful content made with the reader’s time and trust in mind."
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "b",
+        "c"
+      ],
+      "settings": {}
+    },
+    "contact": {
+      "type": "contact-enquiry",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "intro",
+    "titles",
+    "point",
+    "principles",
+    "contact"
+  ]
+}
