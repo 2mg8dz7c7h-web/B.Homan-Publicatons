@@ -1,0 +1,6 @@
+<footer class="site-footer"><div class="page-width"><div class="footer-main">
+<div><div class="footer-brand">B. Homan<br>Publications</div><p>{{ settings.footer_statement | escape }}</p></div>
+<div><h2 class="footer-heading">Explore</h2><div class="footer-links"><a href="{{ routes.root_url }}#about">Our approach</a><a href="{{ routes.root_url }}#publications">Our publications</a><a href="{{ routes.root_url }}#principles">Our principles</a><a href="{{ routes.root_url }}#contact">Contact</a></div></div>
+<div><h2 class="footer-heading">Information</h2><div class="footer-links">{% if shop.policies.privacy_policy %}<a href="{{ shop.policies.privacy_policy.url }}">Privacy policy</a>{% endif %}{% if shop.policies.terms_of_service %}<a href="{{ shop.policies.terms_of_service.url }}">Terms of service</a>{% endif %}{% if shop.policies.refund_policy %}<a href="{{ shop.policies.refund_policy.url }}">Refund policy</a>{% endif %}<a href="{{ routes.search_url }}">Search</a></div></div>
+</div><div class="footer-bottom"><span>© {{ 'now' | date: '%Y' }} B. Homan Publications. All rights reserved.</span><span>Independent publishing · Australia</span></div></div></footer>
+{% schema %}{"name":"Footer","settings":[]}{% endschema %}
