@@ -1,0 +1,12 @@
+<header class="site-header">
+{% if settings.announcement_text != blank %}<div class="announcement">{{ settings.announcement_text | escape }}</div>{% endif %}
+<div class="page-width header-inner">
+<a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }}"><span class="brand-mark">B.</span><span class="brand-name">B. Homan<small>Publications</small></span></a>
+<button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="SiteNav">Menu</button>
+<nav class="header-nav" id="SiteNav" data-site-nav aria-label="Main navigation"><ul class="nav-list">
+{% for link in section.settings.menu.links %}<li><a href="{{ link.url }}"{% if link.current %} aria-current="page"{% endif %}>{{ link.title | escape }}</a></li>{% else %}
+<li><a href="{{ routes.root_url }}#about">Our approach</a></li><li><a href="{{ routes.root_url }}#publications">Publications</a></li><li><a href="{{ routes.root_url }}#principles">Our principles</a></li><li><a href="{{ routes.root_url }}#contact">Contact</a></li>
+{% endfor %}</ul></nav>
+<div class="header-actions"><a class="icon-link" href="{{ routes.search_url }}">Search</a><a class="icon-link" href="{{ routes.cart_url }}">Bag ({{ cart.item_count }})</a></div>
+</div></header>
+{% schema %}{"name":"Header","settings":[{"type":"link_list","id":"menu","label":"Menu","default":"main-menu"}]}{% endschema %}
